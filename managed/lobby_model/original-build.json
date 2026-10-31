@@ -1,0 +1,130 @@
+{
+  "unity": "2022.3.62f3",
+  "urp_reference": "14.0.12",
+  "game_references": "D:\\Il2CppDumper-win-v6.7.46\\DummyDll",
+  "artifacts": {
+    "lobby_model.dll.bytes": {
+      "bytes": 93696,
+      "sha256": "6034d6cdf168282cb69371be5abf438e6244f0e3ef85fbed0a22ad63facc271f"
+    },
+    "lobby_model.bundle": {
+      "bytes": 25785,
+      "sha256": "772b11903ac7e88b430e9267024edcf89d5cf84d71c85df61be026863a1de0df"
+    }
+  },
+  "sources": {
+    "Assets/Editor/BuildLobbyModel.cs": "0a5516bc71a949eed196766db81fbb9dfedcd215ffc1daffedeff73709f238d0",
+    "Assets/Editor/LobbyCopyProbe.cs": "2cf23648717339af4226ca88fffe0c4cd32fd275a05b6525588a04eed54cee06",
+    "Assets/Editor/LobbyFixture.shader": "5a9738530edec4b60e1a5627b42898217b22d5f64c008601b183fa29644b27a6",
+    "Assets/Editor/LobbyFixtureFeature.cs": "e936e8d89fc424ae37492fd7e2edf39772ee4223d5da7d75973a20f38517086a",
+    "Assets/Editor/RealLobbyModel.cs": "66fc32f4a30dcd7531384d00f3bc3792f0e7ae3b7917ba708e88a2ddf3ac10a2",
+    "Assets/Editor/ValidateLobbyDirect.cs": "3341b241cbc41e6cc57308b5b55cc55b1bf143b662e13286a3ee233c05379110",
+    "Assets/Editor/ValidateLobbyModel.cs": "a1505da54eb03545924154a96aab32ea2da956c676b1c14f99c52502e597158d",
+    "Assets/LobbyModel/AssemblyInfo.cs": "01a2daf15dfc17f998b51ba6872f5a1dfaefe4f14f5c14241d65d9fdfae21ba0",
+    "Assets/LobbyModel/CropSizing.cs": "03429c786bba259e0e69b702c1f88d7f0438aebaab2b709fbec44ec675f8513e",
+    "Assets/LobbyModel/DirectLighting.cs": "c543ccf56a865f2d041871f1a245fe592cf18496b2f71de4860a27ba4c9a3e40",
+    "Assets/LobbyModel/Entry.cs": "350a9b93234e14221d1ab33f9678ee8864b9a8a2fd977a13dfb3b2915567438d",
+    "Assets/LobbyModel/Entry.Direct.cs": "792e45d8e154b3ed2224f1ba66772339874cd59ae13a896c6a79d90ea53e4883",
+    "Assets/LobbyModel/FTRez.LobbyModel.asmdef": "d6a2d2d68a977ee93a1e631bd32134b36c9ccab61c5573daab3335c0cdbfe4c2",
+    "Assets/LobbyModel/GeometryChanges.cs": "c4a707f9e4a09d6166442a0d2e5d3301db3a69080af589f28cc52e97ac6b457f",
+    "Assets/LobbyModel/LayerIsolation.cs": "70d077eb153402a58537c5bf3081045b6717218ecfd100ad0a6122edfa7e5ec0",
+    "Assets/LobbyModel/LobbyEnvironment.cs": "5b7e6ada8f00e94b8f92ba352bc0242d6d62eaed5903a5163270dab1cbf70a53",
+    "Assets/LobbyModel/LobbyModel.shader": "72fbd1aa12c6597bb154a4133e5093be0636c7199f8a71bf5bc99b24c828c3fa",
+    "Assets/LobbyModel/LobbyView.cs": "83a59e411600eb1451e6d702d21e31faa3f984bc5516a4ceab5cec83894b5c80",
+    "Assets/LobbyModel/OriginalModel.cs": "dc99de6a5207e107f39e261894acfc0c41702d5f33412917c037410dd8aabc21",
+    "Assets/LobbyModel/ReflectionSnapshot.cs": "cd047e0314f48360fe50d8efa1f87e80e4bd57298bdd8ab094de8e329bca2dd5",
+    "Assets/LobbyModel/RenderTiming.cs": "6e93de21fb8f5013b6ff7db01c9a2929a5df89ddaae153cdd430d93ce5c2f63c",
+    "Assets/LobbyModel/ShaderProbe.cs": "95407df2900536370ba5500005d9be06eea76370e94daf799cc5c885e66ab841",
+    "Assets/LobbyModel/ShaderState.cs": "0730a5d9832898bd3853743fd42bc891dd7b6a66dc6083d8feb050b2aa21018d",
+    "build.py": "552644ccf910095990f19906b0245625e2d3ad44f2e9bd90dbe95a514f1d977d",
+    "BuildTools/InspectHelper.cs": "51a01b498bac2c5021b51f199edd166181fb66f97a36d2e6ee49c45b982c63a0",
+    "requirements.txt": "62d40258ae1ff8bedaf54a4d6eda23665b56e83ddcaed18d70e4db351b232903",
+    "test_verify_bundle.py": "86a3e1d1c57c7b13ebffa978559d7c39de052ec306e4f8f60eaa350095779fb4",
+    "test_verify_resources.py": "23801487e4784cc68dbc14e8c12ff85f068e47c7fb3387ab3079b165c4912539",
+    "validation_model.py": "9f1737587b436325431cd5618edd20554f9e3c18a10cff1a1d440b7131537b34",
+    "verify_bundle.py": "f5fedd46eb335c30b41425d05ef368d560e0c20dc5d7ca04bf9dce94c5973852",
+    "verify_package.py": "193c267cfb19bf94176c2fd7d9787440a25de84fcee1d4f908c7763c3c299407",
+    "verify_resources.py": "b1449345976872b0f12905d0e1b83afb8763e1783677b778f65fcdd4f5e36845"
+  },
+  "assembly_references": {
+    "mscorlib.dll": "06f511e089b579b74d5309cc7b8fe24c16a26f273d4d40b22d5d676e45601f75",
+    "UnityEngine.CoreModule.dll": "1586c97ac5d948b96b34eab8114a9f26e0fef4c7ab506ebb3e51470dbd8465b9",
+    "UnityEngine.UIModule.dll": "248aecb8d467ec93a2c46c3830c6b5c68be4f3437ad2f30a93f90d9aa3941a6e",
+    "Unity.RenderPipelines.Universal.Runtime_30.dll": "12961e247c2ddf869f684f195e97d24581677bb31e91d2b01213655485766d04",
+    "Unity.RenderPipelines.Core.Runtime_10.dll": "c4ae4e5fe07bf526b39eda06e73be1b71896ec56d7de0f15062bd050a2468406"
+  },
+  "shader_validation": {
+    "sha256": "772b11903ac7e88b430e9267024edcf89d5cf84d71c85df61be026863a1de0df",
+    "bytes": 25785,
+    "unitypy": "1.25.2",
+    "unity": "2022.3.62f3",
+    "shader": "Hidden/FTRez/LobbyModel",
+    "platforms": {
+      "OpenGLES3": {
+        "decompressed_bytes": 19600,
+        "table_entries": 8,
+        "passes": [
+          {
+            "name": "CoverageDepth",
+            "executable_references": 1
+          },
+          {
+            "name": "SelfBeforeUI",
+            "executable_references": 1
+          },
+          {
+            "name": "TransparentForegroundDepth",
+            "executable_references": 1
+          },
+          {
+            "name": "ReflectionSnapshot",
+            "executable_references": 1
+          }
+        ]
+      },
+      "Vulkan": {
+        "decompressed_bytes": 10880,
+        "table_entries": 8,
+        "passes": [
+          {
+            "name": "CoverageDepth",
+            "executable_references": 1
+          },
+          {
+            "name": "SelfBeforeUI",
+            "executable_references": 1
+          },
+          {
+            "name": "TransparentForegroundDepth",
+            "executable_references": 1
+          },
+          {
+            "name": "ReflectionSnapshot",
+            "executable_references": 1
+          }
+        ]
+      }
+    }
+  },
+  "build_pipeline": {
+    "pipeline": "UniversalPipeline",
+    "stripUnusedVariants": false,
+    "graphicsAPIs": [
+      "OpenGLES3",
+      "Vulkan"
+    ]
+  },
+  "helper_api": {
+    "methods": [
+      "GetStatus\tSystem.String\t",
+      "Initialize\tSystem.Void\tSystem.Byte[]",
+      "SetGeometryHooks\tSystem.Void\tSystem.IntPtr",
+      "SetTarget\tSystem.Void\tUnityEngine.Transform,UnityEngine.Renderer[],System.Boolean",
+      "SetTargets\tSystem.Void\tUnityEngine.Transform,UnityEngine.Camera,UnityEngine.Transform[],UnityEngine.Renderer[],System.Int32[],System.Boolean",
+      "SetTargets\tSystem.Void\tUnityEngine.Transform,UnityEngine.Transform[],UnityEngine.Renderer[],System.Int32[],System.Boolean",
+      "Shutdown\tSystem.Void\t",
+      "WatchInstantiation\tSystem.Void\tUnityEngine.AsyncOperation"
+    ],
+    "revision": "lobby-direct-20261023"
+  }
+}

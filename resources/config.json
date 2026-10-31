@@ -1,0 +1,258 @@
+{
+  "schema_version": 1,
+  "assembly": "UpdateScript_500.dll",
+  "metadata_capture_date": "2026-10-30",
+  "mapping_review_date": "2026-10-31",
+  "model": {
+    "types": {
+      "BaseActor": {
+        "namespace": "",
+        "name": "COLDLHMEHPI",
+        "token": "0x02003120"
+      },
+      "BaseUI": {
+        "namespace": "",
+        "name": "BaseUI",
+        "token": "0x02003708"
+      },
+      "ClothUpdater": {
+        "namespace": "",
+        "name": "NFNBCKAOMBN",
+        "token": "0x02003fa6"
+      },
+      "ClothOwner": {
+        "namespace": "",
+        "name": "EPANEGHNNLD",
+        "token": "0x02000959"
+      },
+      "ProfileUI": {
+        "namespace": "",
+        "name": "HorPlayerInfoUI",
+        "token": "0x02000e7f"
+      },
+      "TimelineBinder": {
+        "namespace": "",
+        "name": "IDKOPAJDMBN",
+        "token": "0x02001997"
+      },
+      "LobbyUI": {
+        "namespace": "",
+        "name": "HorMainScreenUI",
+        "token": "0x02002985"
+      }
+    },
+    "fields": {
+      "BaseActor.ClothOwner": {
+        "owner": "BaseActor",
+        "name": "BAJBPPCOPBC",
+        "token": "0x0401b189",
+        "type": "class 'IODLPLCEMPF'",
+        "flags": 4
+      },
+      "ClothOwner.ClothState": {
+        "owner": "ClothOwner",
+        "name": "IMNELDHGCFL",
+        "token": "0x04004ff7",
+        "type": "class 'NFNBCKAOMBN'",
+        "flags": 4
+      },
+      "BaseUI.Binder": {
+        "owner": "BaseUI",
+        "name": "timeLineUIBinder",
+        "token": "0x0401e2c6",
+        "type": "class 'IDKOPAJDMBN'",
+        "flags": 6
+      },
+      "ProfileUI.IsSelf": {
+        "owner": "ProfileUI",
+        "name": "isSelf",
+        "token": "0x040076f9",
+        "type": "bool",
+        "flags": 6
+      },
+      "ClothUpdater.First": {
+        "owner": "ClothUpdater",
+        "name": "<CIKHFNPGMLG>k__BackingField",
+        "token": "0x040226f6",
+        "type": "bool",
+        "flags": 1
+      },
+      "ClothUpdater.Arms": {
+        "owner": "ClothUpdater",
+        "name": "<DEEHLCFGIKH>k__BackingField",
+        "token": "0x040226f7",
+        "type": "bool",
+        "flags": 1
+      },
+      "ClothUpdater.Shown": {
+        "owner": "ClothUpdater",
+        "name": "<HFDNLKLCLCJ>k__BackingField",
+        "token": "0x040226f5",
+        "type": "bool",
+        "flags": 1
+      },
+      "LobbyUI.Camera": {
+        "owner": "LobbyUI",
+        "name": "IDNJICPHJGC",
+        "token": "0x0401736e",
+        "type": "class ['UnityEngine.CoreModule']'UnityEngine.Camera'",
+        "flags": 1
+      },
+      "LobbyUI.Host": {
+        "owner": "LobbyUI",
+        "name": "FGACDHEHMGO",
+        "token": "0x040173bc",
+        "type": "class ['UnityEngine.CoreModule']'UnityEngine.Transform'",
+        "flags": 1
+      }
+    },
+    "methods": {
+      "TimelineBinder.MainBone": {
+        "owner": "TimelineBinder",
+        "name": "PFFNFAELKIH",
+        "token": "0x0600d6c5",
+        "return_type": "UnityEngine.Transform",
+        "parameters": [
+          "System.String"
+        ],
+        "static": false
+      }
+    }
+  },
+  "own_player": {
+    "types": {
+      "UGCTerrain": {
+        "namespace": "",
+        "name": "PLMJBNPGMEO",
+        "token": "0x02000bf3"
+      },
+      "UGCActor": {
+        "namespace": "",
+        "name": "HDEMGICJFDH",
+        "token": "0x02004097"
+      },
+      "BaseActor": {
+        "namespace": "",
+        "name": "COLDLHMEHPI",
+        "token": "0x02003120"
+      },
+      "IdentityModules": {
+        "namespace": "",
+        "name": "EMFGBGMPPJP",
+        "token": "0x02000517"
+      },
+      "IdentityScene": {
+        "namespace": "",
+        "name": "LNPGIKAKCJJ",
+        "token": "0x02001d0a"
+      }
+    },
+    "fields": {
+      "UGCTerrain.minstance": {
+        "owner": "UGCTerrain",
+        "name": "DOKJMHBKDFC",
+        "token": "0x040062b5",
+        "type": "class 'PLMJBNPGMEO'",
+        "flags": 17
+      },
+      "UGCTerrain.ActorDic": {
+        "owner": "UGCTerrain",
+        "name": "<PLOJKIKLGOM>k__BackingField",
+        "token": "0x040062cb",
+        "type": "class ['mscorlib']'System.Collections.Generic.Dictionary`2'<uint32, class 'HDEMGICJFDH'>",
+        "flags": 1
+      },
+      "UGCTerrain.curMapData": {
+        "owner": "UGCTerrain",
+        "name": "<FIEPOKEMKCN>k__BackingField",
+        "token": "0x040062fd",
+        "type": "class 'DBGHCKCNOAN'",
+        "flags": 1
+      },
+      "BaseActor.Character": {
+        "owner": "BaseActor",
+        "name": "<FHMOECMBBHC>k__BackingField",
+        "token": "0x0401b17d",
+        "type": "class ['UnityEngine.CoreModule']'UnityEngine.Transform'",
+        "flags": 1
+      },
+      "BaseActor.isDestroyed": {
+        "owner": "BaseActor",
+        "name": "<OAICPIGFIBA>k__BackingField",
+        "token": "0x0401b18d",
+        "type": "bool",
+        "flags": 1
+      },
+      "BaseActor.IdentityID": {
+        "owner": "BaseActor",
+        "name": "<FCFAHGFHGKD>k__BackingField",
+        "token": "0x0401b18e",
+        "type": "uint64",
+        "flags": 1
+      },
+      "IdentityModules.Scene": {
+        "owner": "IdentityModules",
+        "name": "MFEGHLMGHIM",
+        "token": "0x04002ca6",
+        "type": "class 'LNPGIKAKCJJ'",
+        "flags": 17
+      },
+      "IdentityScene.SelfID": {
+        "owner": "IdentityScene",
+        "name": "<PHNMLJONMGP>k__BackingField",
+        "token": "0x0400ed59",
+        "type": "uint64",
+        "flags": 1
+      }
+    },
+    "methods": {}
+  },
+  "settings": {
+    "types": {
+      "SettingsUI": {
+        "namespace": "",
+        "name": "HorSettingUI",
+        "token": "0x02003ab7"
+      },
+      "ToggleItem": {
+        "namespace": "",
+        "name": "HorToggleItem",
+        "token": "0x02000a13"
+      },
+      "UIReference": {
+        "namespace": "",
+        "name": "UIReference",
+        "assembly": "PluginsInit_300.dll",
+        "token": 0
+      }
+    },
+    "fields": {
+      "graphicsReference": {
+        "owner": "SettingsUI",
+        "name": "OPBMFLLNLPC",
+        "token": "0x040201a6",
+        "type": "UIReference",
+        "flags": 1
+      },
+      "donorRow": {
+        "owner": "SettingsUI",
+        "name": "PJMOIEJFJFC",
+        "token": "0x040201c8",
+        "type": "HorToggleItem",
+        "flags": 1
+      }
+    },
+    "methods": {
+      "referenceGet": {
+        "owner": "UIReference",
+        "name": "Get",
+        "token": 0,
+        "return_type": "UnityEngine.GameObject",
+        "parameters": [
+          "System.Int32"
+        ],
+        "static": false
+      }
+    }
+  }
+}

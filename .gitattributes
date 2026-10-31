@@ -1,0 +1,10 @@
+# Keep build entry points usable across platforms.
+* text=auto
+*.sh text eol=lf
+/gradlew text eol=lf
+*.bat text eol=crlf
+*.bundle binary
+*.dll.bytes binary
+
+# The resource verifier checks exact bytes, including original line endings.
+/managed/lobby_model/** -text

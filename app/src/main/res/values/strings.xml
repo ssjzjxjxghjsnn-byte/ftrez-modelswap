@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FTREZ ModelSwap</string>
+    <string name="xposed_description">在游戏原有图像设置中选择替换模型。</string>
+    <string-array name="xposed_scope">
+        <item>com.pi.czrxdfirst</item>
+    </string-array>
+</resources>

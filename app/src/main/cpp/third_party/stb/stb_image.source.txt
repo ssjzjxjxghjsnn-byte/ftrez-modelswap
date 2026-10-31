@@ -1,0 +1,5 @@
+Upstream: https://raw.githubusercontent.com/nothings/stb/013ac3beddff3dbffafd5177e7972067cd2b5083/stb_image.h
+SHA-256: 594c2fe35d49488b4382dbfaec8f98366defca819d916ac95becf3e75f4200b3
+License: MIT or public domain, included at end of stb_image.h.
+Used as the PNG/JPEG decoder dependency for the graffiti image worker.
+This is not a claim of byte-identical decoding to the original library.

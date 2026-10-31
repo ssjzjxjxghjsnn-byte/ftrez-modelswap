@@ -1,0 +1,4 @@
+nlohmann/json v3.11.3
+https://github.com/nlohmann/json/releases/tag/v3.11.3
+Single header: single_include/nlohmann/json.hpp
+License: LICENSE.MIT

@@ -1,0 +1,65 @@
+# Local Android/Gradle and editor state.
+.gradle/
+.idea/
+.vscode/
+local.properties
+*.iml
+
+# Generated build outputs.
+build/
+Build/
+dist/
+out/
+.cxx/
+.externalNativeBuild/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+compile_commands.json
+*.apk
+*.aab
+*.aar
+*.apks
+*.dex
+*.class
+*.jar
+!/gradle/wrapper/gradle-wrapper.jar
+*.so
+*.a
+*.o
+*.obj
+*.lib
+*.dll
+*.dll.bytes
+*.exe
+*.pdb
+*.bundle
+*.bundle.manifest
+*.build.json
+*.zip
+*.7z
+*.log
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Required embedded resources are versioned with the source.
+!/app/src/main/cpp/self_model/lobby_model.dll.bytes
+!/app/src/main/cpp/self_model/lobby_model.bundle
+!/app/src/main/cpp/self_model/lobby_model.build.json
+!/app/src/main/cpp/self_model/ftrez-toon.bundle
+
+# Local locators and auxiliary tools; retain required resource build scripts.
+/tools/*
+!/tools/build_lobby_resources.py
+!/tools/verify_lobby_resources.py
+/scripts/
+/generated_config/
+/dumpcs/
+/results/
+dump.cs
+*.il
+
+# Local documentation.
+/docs/
