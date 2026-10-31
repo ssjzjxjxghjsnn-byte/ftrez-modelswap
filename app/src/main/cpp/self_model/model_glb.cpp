@@ -169,9 +169,9 @@ Model decodeGlb(const std::vector<uint8_t>& bytes) {
     }
     need(d.buffers_count==1 && !d.buffers[0].uri && d.bin,"GLB must embed its buffer");
     need(cgltf_load_buffers(&options,&d,nullptr)==cgltf_result_success,"GLB missing embedded buffer");
+    need(d.nodes_count>0 && d.nodes_count<=maxModelBones && d.skins_count==1,"GLB requires one armature and at most 1024 nodes");
+    auto& skin=d.skins[0];need(skin.joints_count>0 && skin.joints_count<=maxModelBones,"GLB requires 1 to 1024 joints");
     need(cgltf_validate(&d)==cgltf_result_success,"Invalid GLB accessors or hierarchy");
-    need(d.nodes_count>0 && d.nodes_count<=256 && d.skins_count==1,"GLB requires one armature and at most 256 nodes");
-    auto& skin=d.skins[0];need(skin.joints_count>0 && skin.joints_count<=256,"GLB missing joints");
 
     std::vector<int> order(d.nodes_count),depth(d.nodes_count);
     std::iota(order.begin(),order.end(),0);

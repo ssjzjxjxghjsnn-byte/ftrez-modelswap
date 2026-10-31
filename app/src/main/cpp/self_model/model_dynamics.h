@@ -10,6 +10,22 @@ inline glm::vec3 limitCone(glm::vec3 rest,glm::vec3 wanted,float angle) {
 }
 
 
+inline glm::vec3 springContact(glm::vec3 origin,glm::vec3 tail,float length,
+                               glm::vec3 center,float radius) {
+    const auto offset=center-origin;
+    const float distance=glm::length(offset);
+    if(distance<1e-6f) return tail; // Concentric: rotation cannot improve clearance.
+    const auto axis=offset/distance;
+    // Intersect the fixed-length tail sphere with the collider boundary.
+    // Radially projecting out, then normalizing the bone length, can put a
+    // collinear hair strand straight back inside the same collider forever.
+    const float cosine=std::clamp((length*length+distance*distance-radius*radius)/
+                                  (2*length*distance),-1.f,1.f);
+    const auto wanted=direction(tail-origin);
+    const auto tangent=direction(wanted-axis*glm::dot(wanted,axis),perpendicular(axis));
+    return origin+length*(axis*cosine+tangent*std::sqrt(std::max(0.f,1-cosine*cosine)));
+}
+
 struct SpringParameters { float damping,attraction,cone,translation,padding; };
 inline constexpr SpringParameters springParameters[]{
     {0,0,0,1,0}, {.15f,.10f,.52f,.75f,.012f},
@@ -62,7 +78,7 @@ class ModelDynamics {
         auto tail=origin+limitCone(rest,direction(predicted-origin,rest),cone)*length;
 
 
-        for(int pass=0;pass<3;++pass) {
+        for(int pass=0;pass<8;++pass) {
             bool hit=false;
             for(const auto& c:m.colliders) {
                 if(!(c.mask&(1u<<b.dynamics)) || c.bone==int(i) || c.end==int(i)) continue;
@@ -80,7 +96,7 @@ class ModelDynamics {
                 }
                 const float radius=(c.radius+p.padding)*scale;
                 if(glm::length(tail-center)<radius) {
-                    tail=center+direction(tail-center,rest)*radius; hit=true;
+                    tail=springContact(origin,tail,length,center,radius); hit=true;
                 }
             }
             tail=origin+direction(tail-origin,rest)*length;

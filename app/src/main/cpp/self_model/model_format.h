@@ -6,6 +6,8 @@
 #include <utility>
 
 namespace ft::self_model {
+// Includes non-joint glTF hierarchy/mesh nodes retained by the pose evaluator.
+constexpr size_t maxModelBones=1024;
 struct Vec3 { float x=0,y=0,z=0; };
 struct Quat { float x=0,y=0,z=0,w=1; };
 struct Matrix { std::array<float,16> m{}; };

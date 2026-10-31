@@ -622,7 +622,7 @@ struct Runtime {
         for(auto renderer:api.elements<void*>(api.call(sceneObjectsInactive,nullptr,{api.type("UnityEngine.SkinnedMeshRenderer"),&includeInactive}),32768)) {
             if(!live(renderer) || seen.count(renderer)) continue;
             if(api.name(api.call(getName,api.call(componentGO,renderer))).starts_with("FTREZ.")) continue;
-            const auto bones=api.elements<void*>(api.call(smrBones,renderer),512);
+            const auto bones=api.elements<void*>(api.call(smrBones,renderer),maxModelBones);
             if(std::any_of(bones.begin(),bones.end(),[&](auto bone) { return bone && bone!=character && rig.count(bone); })) {
                 seen.insert(renderer); result.push_back(renderer);
             }
@@ -1126,8 +1126,8 @@ struct Runtime {
             if(api.name(api.call(getName,go)).starts_with("FTREZ.")) continue;
 
             auto mesh=api.call(smrMesh,renderer); if(!live(mesh)) continue;
-            auto bones=api.elements<void*>(api.call(smrBones,renderer),512);
-            auto binds=api.elements<Matrix>(api.call(meshBind,mesh),512);
+            auto bones=api.elements<void*>(api.call(smrBones,renderer),maxModelBones);
+            auto binds=api.elements<Matrix>(api.call(meshBind,mesh),maxModelBones);
             if(bones.size()!=binds.size()) continue;
             auto tf=api.call(getTransform,go);
             auto renderToRoot=rootInverse*matrix(transformMatrix(tf));

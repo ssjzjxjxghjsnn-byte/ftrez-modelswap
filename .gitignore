@@ -54,6 +54,7 @@ venv/
 /tools/*
 !/tools/build_lobby_resources.py
 !/tools/verify_lobby_resources.py
+!/tools/test_model_bone_limit.py
 /scripts/
 /generated_config/
 /dumpcs/
@@ -61,5 +62,6 @@ venv/
 dump.cs
 *.il
 
-# Local documentation.
+# Local tests and documentation.
+/tests/
 /docs/
